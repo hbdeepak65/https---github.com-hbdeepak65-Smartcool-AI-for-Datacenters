@@ -1,0 +1,9 @@
+<h2>🌍 Known Sustainable Data Centers</h2>
+{% for city, centers in data_centers.items() %}
+  <h3>{{ city }}</h3>
+  <ul>
+    {% for center in centers %}
+      <li>{{ center }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
